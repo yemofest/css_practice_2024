@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='/iimage/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="/image/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='/image/pic_bulboff.gif'">Turn off the light</button>
+
+<p>The pre tag preserves both spaces and line breaks:</p>
+
+<pre>
+   My Bonnie lies over the ocean.
+
+   My Bonnie lies over the sea.
+
+   My Bonnie lies over the ocean.
+   
+   Oh, bring back my Bonnie to me.
+</pre>
+
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
+
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+<p>Browsers usually insert quotation marks around the q element.</p>
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<p>Here is a quote from WWF's website:</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+<p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+
+<bdo dir="rtl">This line will be written from right to left</bdo>
+<p>Same as color name "Tomato":</p>
+
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="/image/img_food.jpg">
+  <source media="(min-width: 465px)" srcset="/image/img_car.jpg">
+  <img src="/image/img_food.jpg" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
+
+</body>
+</html>

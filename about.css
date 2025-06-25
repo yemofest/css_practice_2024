@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+}
+
+.column{
+    width: 33.33%;
+    border: 2px solid green;
+}
+
+.img-width{
+    width: 100%;
+}
+
+.my-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.page-title{
+    font-size: 90px;
+}
+
+@media (max-widht:768px){
+    .page-title font-size: 20px;
+}

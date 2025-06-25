@@ -1,0 +1,17 @@
+#box {
+    width: 120px; height: 100px; background-color:black;
+}
+
+
+p {
+    color: blueviolet;
+}
+
+.third-p-tag {
+    font-size: 25px;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+     border: 2px solid red 
+}
